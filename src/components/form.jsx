@@ -19,7 +19,7 @@ export const Form = (props) => {
       {!props.data.isRegistered && (
         <Inputs
           type="password"
-          placeholder="Password"
+          placeholder=" Confirm Password"
           handler={props.password}
           check={true}
         />
