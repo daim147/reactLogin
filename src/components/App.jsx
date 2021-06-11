@@ -2,8 +2,6 @@ import React from "react";
 import { Form } from "./form";
 import { Greeting } from "./greeting";
 class App extends React.Component {
-  inputName = document.querySelector(".name");
-  inputPass = document.querySelector(".pass");
   state = {
     username: "",
     name: "Register Your Free Account",
@@ -37,8 +35,8 @@ class App extends React.Component {
 
     if (
       this.state.isRegistered &&
-      this.inputPass.value === this.state.password &&
-      this.inputName.value === this.state.username.trim()
+      document.querySelector(".pass").value === this.state.password &&
+      document.querySelector(".name").value === this.state.username.trim()
     ) {
       this.setState({ islogged: true, name: `Hello ${this.state.username}` });
     }
