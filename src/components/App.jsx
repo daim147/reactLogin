@@ -9,7 +9,7 @@ class App extends React.Component {
     isRegistered: false,
     password: "",
     hour: new Date().getHours(),
-    type: ["Registered", "Login"],
+    type: ["Register", "Login"],
     canRegistered: false,
     condition: false,
     check: true,
@@ -30,7 +30,7 @@ class App extends React.Component {
         canRegistered: false,
       });
     } else {
-      this.setState({ name: `OOPS!! Something wents Wrong` });
+      this.setState({ name: `OOPS!! Something went Wrong` });
     }
 
     if (
