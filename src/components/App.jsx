@@ -12,7 +12,6 @@ class App extends React.Component {
     type: ["Register", "Login"],
     canRegistered: false,
     condition: false,
-    check: true,
   };
   setName = (value) => {
     if (!this.state.isRegistered) {
